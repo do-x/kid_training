@@ -23,6 +23,8 @@ int main( int argc, char *argv[] ){
 			memcpy(temp, argv[i], strlen(argv[i+1]));
 			memcpy(argv[i], argv[i+1], strlen(argv[i+1]));
 			memcpy(argv[i+1], temp, strlen(argv[i+1]));
+
+			printf("%s, %s\n", argv[i], argv[i+1]);
 		}
 		printf("%s, %s\n", argv[i], argv[i+1]);
 	}
